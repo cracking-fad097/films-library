@@ -9,7 +9,6 @@ import { Review } from "./pages/Review/Review.jsx"
 import { Trailer } from "./pages/Trailer/Trailer.jsx"
 
 function App() {
-
   return (
       <Routes>
         <Route path="/" element={<Layout />}>
