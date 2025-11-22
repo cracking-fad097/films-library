@@ -1,8 +1,8 @@
-import { useState } from "react"
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
 import { getPopularMovies } from "../../helpers/services"
-import { data } from "react-router-dom"
+import { FilmList } from "../../components/FilmList/FilmList.jsx"
 import styles from './Home.module.css'
+import noImage from '../../assets/no-image.jpg'
 
 export const Home = () => {
     const [popularMovies, setPopularMovies] = useState(null)
@@ -10,18 +10,8 @@ export const Home = () => {
         getPopularMovies(1).then((data) => {setPopularMovies(data)})
     }, [])
 
-    console.log(popularMovies)
     return <>
-        Home
-        <ul className={styles.filmList}>
-            {popularMovies?.data.results.map(({id, title, vote_average, poster_path}) => <li key={id} className={styles.filmData}>
-                <div className={styles.filmImage}>
-                    <img src={`https://image.tmdb.org/t/p/w400/${poster_path}`} alt="..." />
-                </div>
-                <p className={styles.filmTitle}>{title}</p>
-                <p className={styles.filmRating}>{vote_average}</p>
-            </li>)}
-        </ul>
+        <FilmList movies={popularMovies} />
     </>
 }
 
