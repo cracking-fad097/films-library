@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Cast } from "../pages/Cast/Cast";
 
 const API_KEY = 'a138d9c2ec5bee6878c1acf4eaa23bdd'
 export const getPopularMovies = async(page) => {
