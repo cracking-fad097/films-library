@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
-import { FilmDetailsNav } from '../../components/FilmDetailsNav/FilmDetailsNav.jsx'
-import { Outlet, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { getCast } from '../../helpers/services.js'
 
 export const Cast = () => {
