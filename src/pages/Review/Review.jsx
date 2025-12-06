@@ -8,7 +8,6 @@ export const Review = () => {
     useEffect(() => {
         getReview(id).then((data) => {setReview(data)})
     }, [])
-    console.log(review)
     return <>
         Review
         <div>

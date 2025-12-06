@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     margin: 20px 10px;
 }
 
@@ -12,14 +12,22 @@
 
 .filmData {
     list-style: none;
-    border: 1px solid black;
+    border: 1px solid darkorchid;
+    box-shadow: 14px 14px 14px 2px  darkorchid;
     padding: 10px 8px;
     border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
 }
+
+.filmData:hover {
+    scale: 1.1;
+} 
 
 .filmTitle {
     font-size: 26px;
     font-weight: 600;
+    color: darkorchid;
 }
 
 .filmRating {

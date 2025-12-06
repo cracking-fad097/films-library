@@ -54,7 +54,6 @@ export const getTrailers = async(id) => {
     const searchParams = new URLSearchParams({
         api_key: API_KEY,
         query: name,
-        page
     })
     const url = `https://api.themoviedb.org/3/movie/${id}/videos?${searchParams}`;
     const response = await axios.get(url)

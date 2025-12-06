@@ -5,7 +5,7 @@ import tmdb from '../../assets/tmdb.svg'
 export const Navigation = () => {
     return (
         <ul>
-            <Link to="/"><li><img src={tmdb} alt="..." width={400} /></li></Link>
+            <li><Link to="/"><img src={tmdb} alt="..." width={300} /></Link></li>
             {navigation.map(({id, text, href}) => <li key={id}><Link to={href}>{text}</Link></li>)}
         </ul>
     )
