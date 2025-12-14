@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    margin: 20px 10px;
+    margin: 20px 10px 50px 10px;
 }
 
 .filmImage img {
@@ -12,12 +12,14 @@
 
 .filmData {
     list-style: none;
-    border: 1px solid darkorchid;
-    box-shadow: 14px 14px 14px 2px  darkorchid;
+    font-weight: 600;
+    border: 4px solid darkorchid;
+    /* box-shadow: 14px 14px 14px 2px  darkorchid; */
     padding: 10px 8px;
     border-radius: 15px;
     cursor: pointer;
     transition: .5s;
+    z-index: 0;
 }
 
 .filmData:hover {
@@ -27,10 +29,10 @@
 .filmTitle {
     font-size: 26px;
     font-weight: 600;
-    color: darkorchid;
+    color: white;
 }
 
 .filmRating {
     font-size: 26px;
-    color: green;
+    color: greenyellow;
 }

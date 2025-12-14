@@ -25,6 +25,6 @@ export const Movie = () => {
             <input type="text" placeholder='Search film' value={name} onChange={handleInputChange}/>
             <button type="submit">Search</button>
         </form>
-        <FilmList movies={movie} />
+        <FilmList movies={movie?.data.results} />
     </>
 }

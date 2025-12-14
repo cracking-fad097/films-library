@@ -1,0 +1,21 @@
+.details {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.img {
+    width: 600px;
+}
+
+.description {
+
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+    padding: 0;
+}

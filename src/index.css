@@ -1,7 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  color: black;
-  background-color: aliceblue;
+  color: white;
+  background-color: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: aquamarine;
+  transition: .5s;
+}
+
+a:hover {
+  color: aliceblue;
+}
+
+p {
+  font-weight: 600;
+  font-size: 26px;
 }

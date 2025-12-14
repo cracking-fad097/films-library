@@ -5,9 +5,9 @@ export const getFromLocalStorage = (key) => {
 
 export const toggleLocalStorage = (key, el) => {
     const data = getFromLocalStorage(key)
-    const isInStorage = data.find((value) => value.name === el.name)
+    const isInStorage = data.find((value) => value.id === el.id)
     if (isInStorage) {
-        const filteredArr = data.filter((film) => film.name !== el.name)
+        const filteredArr = data.filter((film) => film.id !== el.id)
         localStorage.setItem(key, JSON.stringify(filteredArr))
         return false
     }
