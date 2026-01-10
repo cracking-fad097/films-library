@@ -1,0 +1,38 @@
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 465px;
+    height: 40px;
+    margin-bottom: 70px;
+}
+
+.movieName {
+    width: 450px;
+    border-radius: 8px;
+    padding-right: 52px;
+    padding-left: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: darkorchid;
+    background-color: lavender; 
+    border: 1px solid blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.searchButton {
+    padding: 0;
+    position: absolute;
+    height: 40px;
+    right: 8px;
+    font-size: 16px;
+    width: 50px;
+    color: darkorchid;
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}

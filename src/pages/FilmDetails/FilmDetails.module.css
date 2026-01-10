@@ -8,8 +8,22 @@
     width: 600px;
 }
 
-.description {
+.favouriteButton {
+    width: 400px;
+    padding: 8px 0;
+    font-size: 26px;
+    background-color: darkorchid;
+    color: aquamarine;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    transition: .5s;
+    cursor: pointer;
+}
 
+.favouriteButton:hover {
+    scale: 1.1;
 }
 
 .ul {
@@ -18,4 +32,19 @@
     gap: 20px;
     font-size: 22px;
     padding: 0;
+}
+
+.filmRatingGreen {
+    font-size: 26px;
+    color: greenyellow;
+}
+
+.filmRatingYellow {
+    font-size: 26px;
+    color: yellow;
+}
+
+.filmRatingRed {
+    font-size: 26px;
+    color: red;
 }

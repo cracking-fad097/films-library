@@ -5,35 +5,3 @@
     gap: 40px;
     margin: 20px 10px 50px 10px;
 }
-
-.filmImage img {
-    width: 378px;
-    border-radius: 14px; 
-}
-
-.filmData {
-    width: 400px;
-    list-style: none;
-    font-weight: 600;
-    border: 4px solid darkorchid;
-    padding: 10px 8px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: .5s;
-    z-index: 0;
-}
-
-.filmData:hover {
-    scale: 1.1;
-} 
-
-.filmTitle {
-    font-size: 26px;
-    font-weight: 600;
-    color: white;
-}
-
-.filmRating {
-    font-size: 26px;
-    color: greenyellow;
-}

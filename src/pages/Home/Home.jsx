@@ -11,11 +11,11 @@ export const Home = () => {
     const [searchParams, setSearchParams ] = useSearchParams()
     const pageNumber = Number(searchParams.get('page') ?? 1)
     useEffect(() => {
-        getPopularMovies(1).then((data) => {setPopularMovies(data)})
-    }, [])
-    console.log(popularMovies)
+        getPopularMovies(pageNumber).then((data) => {setPopularMovies(data)})
+    }, [pageNumber])
+    
     return <>
         <FilmList movies={popularMovies?.data.results} />
-        <PaginatedItems totalPages={popularMovies?.data.total_pages} currentPage={pageNumber - 1}/>
+        <PaginatedItems totalPages={popularMovies?.data.total_pages} currentPage={pageNumber - 1} setSearchParams={setSearchParams}/>
     </>
 }

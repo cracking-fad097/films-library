@@ -1,8 +1,11 @@
 import ReactPaginate from 'react-paginate';
+import './Pagination.css'
 
-function PaginatedItems({ totalPages, currentPage }) {
-  const handlePageClick = () => {
-
+function PaginatedItems({ totalPages, currentPage, setSearchParams }) {
+  const handlePageClick = (event) => {
+    setSearchParams({
+      page: event.selected + 1
+    })
   }
 
   return (
@@ -13,20 +16,21 @@ function PaginatedItems({ totalPages, currentPage }) {
             forcePage={currentPage}
             onPageChange={handlePageClick}
             breakLabel="..."
-            nextLabel="next >"
-            previousLabel="< previous"
+            nextLabel=">"
+            previousLabel="<"
             renderOnZeroPageCount={null}
             pageRangeDisplayed={2}
             marginPagesDisplayed={4}
+
             containerClassName="pagination"
             activeClassName="active"
             breakClassName="item"
             breakLinkClassName="link"
             pageClassName="item"
             pageLinkClassName="link"
-            previousClassName="item"
+            previousClassName="prevItem"
             previousLinkClassName="link"
-            nextClassName="item"
+            nextClassName="nextItem"
             nextLinkClassName="link"
         />
       </div>

@@ -1,0 +1,20 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.link {
+    font-size: 26px;
+    font-weight: 500;
+    color: darkorchid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.prevItem, .nextItem {
+    border: 2px solid darkorchid;
+    border-radius: 8px;
+    padding: 0 6px 3px 6px;
+}

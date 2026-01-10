@@ -1,0 +1,15 @@
+.castList {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.profile {
+    img {
+        object-fit: cover;
+        width: 400px;
+        height: 600px;
+    }
+}

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { getCast } from '../../helpers/services.js'
+import styles from './Cast.module.css'
+import noImage from '../../assets/no-image.jpg'
 
 export const Cast = () => {
     const {id} = useParams()
@@ -10,12 +12,11 @@ export const Cast = () => {
     }, [])
 
     return <>
-        Cast:
         <div>
-            <ul>{actors?.data.cast.map((value) => <li>
+            <ul className={styles.castList}>{actors?.data.cast.map((value) => <li className={styles.profile}>
                 <p>{value.character}</p>
                 <p>{value.name}</p>
-                <img src={`https://image.tmdb.org/t/p/w400/${value.profile_path}`} alt="" />
+                <img src={value.profile_path?`https://image.tmdb.org/t/p/w400/${value.profile_path}`:noImage} alt="" />
             </li>)}</ul>
         </div>
     </>

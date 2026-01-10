@@ -11,7 +11,6 @@ export const Trailer = () => {
     }, [])
     console.log(trailer)
     return <>
-        Trailer
         <VideoPlayer value={trailer?.data.results}/>
     </>
 }
